@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="pimouse_slam" type="wall_follow.py" name="local_detector" output="screen"/>
+</launch>

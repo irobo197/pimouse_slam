@@ -1,0 +1,5 @@
+<launch>
+  <!--node pkg="pimouse_slam" name="keyboard_cmd_vel" type="keyboard_cmd_vel.py" required="true"/-->
+  <!--node pkg="pimouse_slam" name="wall_follow" type="wall_follow.py" required="true"/-->
+  <node pkg="pimouse_slam" name="motors" type="motors.py" required="true"/>
+</launch>

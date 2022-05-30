@@ -1,0 +1,15 @@
+<launch>
+  <arg name="explorer" default="RRT"/>
+
+  <!-- SLAM Node -->
+  <include file="$(find pimouse_slam)/launch/slam_stand_alone.launch"/>
+
+  <!--include file="$(find pimouse_slam)/launch/move_base.launch"/>
+  <node pkg="urg_node" name="urg_node" type="urg_node" required="true">
+    <param name="frame_id" value="base_link"/>
+  </node-->
+
+  <!-- Autonomous Explorer Node -->
+  <include file="$(find pimouse_slam)/launch/$(arg explorer).launch"/>
+
+</launch>
